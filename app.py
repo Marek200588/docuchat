@@ -38,6 +38,15 @@ TOP_K = 3                 # passages retrieved per question
 RATE_LIMIT_QUESTIONS = 15 # per session, protects the demo API key
 MAX_PDF_MB = 10
 
+# Optional Hugging Face token — avoids anonymous-request rate limiting when the
+# embedding model is downloaded on a cold start (fresh container / after reboot).
+try:
+    _hf_token = st.secrets.get("HF_TOKEN", "")
+except Exception:
+    _hf_token = ""
+if _hf_token:
+    os.environ["HF_TOKEN"] = _hf_token
+
 # ----------------------------------------------------------------------------
 # Styling — lift Streamlit out of its default look
 # ----------------------------------------------------------------------------
