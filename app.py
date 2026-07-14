@@ -30,7 +30,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MODEL = "llama-3.1-8b-instant"
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"  # 384-dim, ~90MB, fast on CPU
 CHUNK_SIZE = 500          # characters per chunk — small enough to isolate a topic
 CHUNK_OVERLAP = 80        # overlap so context isn't cut mid-thought
