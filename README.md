@@ -1,3 +1,14 @@
+---
+title: DocuChat
+emoji: 📄
+colorFrom: blue
+colorTo: yellow
+sdk: streamlit
+sdk_version: "1.59.2"
+app_file: app.py
+pinned: false
+---
+
 # 📄 DocuChat (Semantic) — Chat with your documents, powered by vector embeddings
 
 A **retrieval-augmented generation (RAG)** app using **semantic search**. Upload a PDF, ask questions in plain language, and get answers grounded in the document — with the exact source passage shown.
