@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.claude/
+
+# Demo media (not part of the source)
+*.mp4
+Zrzut ekranu*.png

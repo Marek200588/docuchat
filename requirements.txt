@@ -1,0 +1,5 @@
+﻿streamlit>=1.40
+groq>=0.11
+fastembed>=0.4
+numpy>=1.26
+pypdf>=5.0
